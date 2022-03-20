@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block templateheredar%}
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type="submit" value="Crear">
+</form>
+{% block footer %}{% endblock footer %}
+{% endblock templateheredar%} 
